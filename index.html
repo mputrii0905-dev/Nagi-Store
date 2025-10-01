@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Nagi</title>
+    <link rel="stylesheet" href="styleindex.css">
+
+</head>
+<body>
+    <!-- HEADER DAN NAVIGASI -->
+     <header>
+        <h1>Nagi Store</h1>
+
+        <nav>
+            <ul id="menu">
+                <li><a href="#banner">Menu</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#keranjang">Keranjang</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li id="#tentangMenu"><a href="tentang.html">Tentang Kami</a></li>
+                <li id="#loginMenu"><a href="login.html">Login</a></li>
+                <li id="#regiterMenu"><a href="registrasi.html">Rigistrasi</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Form Pencarian Produk -->
+         <form>
+            <input type="text"placeholder="Cari produk">
+            <button type="submit">Cari</button>
+         </form>
+     </header>
+     <!-- HEADER DAN NAVIGASI -->
+
+     <!-- Banner -->
+      <section id="banner">
+        <img src="gambar.png" width="350px" height="350px" style="border-radius: 50%;">
+
+
+        <div class="kolom">
+            <p class="deskripsi"Selamat Datang Nagi Store></p>
+            <h2>Temukan Produk Terbaik Untuk Kebutuhan Anda</h2>
+            <p>Dapatkan Diskon 50% Untuk Produk Pilihan</p>
+            <p><a href="vidio.mp4" class="tbl-pink">Pelajari Lebih Lanjut Tentang Kami</a></p>
+        </div>
+      </section>
+      <!-- Banner -->
+
+      <!-- PRODUK -->
+       <section id="produk">
+            <h2>Produk Kami</h2>
+
+            <div class="produk-item">
+            <img src="kaychain.jpg" alt="produk" width="150.00px" height="150.00px">
+            <h3>keychain lucu</h3>
+            <p>Rp. 10.000</p>
+            <button class="tambah-keranjang">Tambah Keranjang</button>
+            </div>
+
+            <div class="produk-item">
+                <img src="cesing.jpeg" alt="produk" width="150.00px" height="150.00px">
+                <h3>casing aesthatic</h3>
+                <p>Rp. 65.000</p>
+                <button class="tambah-keranjang">Tambah Keranjang</button>
+            </div>
+
+            <div class="produk-item">
+                <img src="gelang.webp" alt="produk" width="150.000px" height="150.00px">
+                <h3>charms barbie</h3>
+                <p>Rp. 55.000</p>
+                <button class="tambah-keranjang">Tambah Keranjang</button>
+            </div>
+
+            <div class="produk-item">
+                <img src="tumbler.jpeg" alt="produk" width="150.000px" height="150.00px">
+                <h3>Tumbler</h3>
+                <p>Rp. 55.000</p>
+                <button class="tambah-keranjang">Tambah Keranjang</button>
+            </div>
+
+            <div class="produk-item">
+                <img src="boneka.jpeg" alt="produk" width="150.000px" height="150.00px">
+                <h3>Boneka lucu</h3>
+                <p>Rp. 105.000</p>
+                <button class="tambah-keranjang">Tambah Keranjang</button>
+            </div>
+
+       </section>
+
+
+       <!-- Produk -->
+
+       <!-- Tombol Lihat Katalog -->
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="Katalog.pdf" class="tbl-biru">Lihat Katalog Lengkap</a>
+        </div>
+        <!-- Tombol Lihat Katalog -->
+
+        <!-- KERANJANG -->
+         <section id="keranjang">
+            <h2>Keranjang Belanja</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produk</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Total</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody id="daftar-keranjang"></tbody>
+            </table>
+            <p>Total Belannja: Rp <span id="total-belanja"></span></p>
+         </section>
+         <!-- KERANJANG -->
+
+         <!-- CHECKOUT -->
+          <section id="checkout">
+            <h2>Checkout</h2>
+            <form onsubmit="kirimwhatsapp(event)">
+                <input type="text" id="nama" placeholder="Nama Lengkap" required>
+                <input type="text" id="alamt" placeholder="Alamat" required>
+                <input type="text" id="hp" placeholder="No Hp" required>
+                <button type="submit">Pesan Sekarang</button>
+            </form>
+          </section>
+          <!-- CHECKOUT -->
+
+          <!-- KONTAK -->
+           <section id="kontak">
+            <h2>Kontak Kami</h2>
+            <p>Email : nagi@gmail.com</p>
+            <p>Website : nagie.com</p>
+            <p>Whatsapp : 086571308849</p>
+           </section>
+           <!-- KONTAK -->
+
+           <!-- NOTIFIKASI -->
+            <div id="toast"></div>
+            <!-- NOTIFIKASI -->
+
+            <!-- FOOTER -->
+             <footer>
+                <p>Copyright&copy; 2025 Nagi.</p>
+             </footer>
+             <!-- FOOTER -->
+</body>
+</html>

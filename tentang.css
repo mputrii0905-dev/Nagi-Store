@@ -1,0 +1,173 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
+
+}
+
+body {
+    line-height: 1.6;
+    background: #55423d;
+    color: #f0f0ea;
+
+}
+
+header {
+    background: #fff3ec;
+    color: #f582ae;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: rgb(17, 5, 9);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgb(172, 7, 62);
+}
+
+header form {
+    display: flex;
+    gap: 10px;
+}
+
+header input[type="text"] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+header button{
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    background: rgb(245, 243, 243);
+    color: rgb(17, 5, 9);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header button:hover{
+    background: palevioletred;
+}
+
+/*================== BAGIAN UMUM ==================*/
+.tengah {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.Kolom .deskripsi {
+    font-size: 14px;
+    color: rgb(129, 32, 32);
+    margin-bottom: 10px;
+}
+
+.Kolom h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.tutor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.kartu-tutor {
+    background: #f582ae;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba (0,0,0,0.1);
+    width: 160px;
+    transition: transfrom 0.3s;
+}
+
+.kartu-tutor img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.kartu-tutor:hover {
+    transform: translateY(-6px);
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px;
+}
+
+.kartu-partner {
+    background: #55423d;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    width: 180px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0,35;
+}
+
+.kartu-partner:hover {
+    transform: translateY(-6px);
+}
+
+footer {
+    text-align: center;
+    background: #140d0b;
+    color: #a7a9be;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tutor-list,
+    .partner-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
